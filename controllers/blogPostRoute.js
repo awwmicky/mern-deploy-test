@@ -7,6 +7,7 @@ module.exports = {
     },
     create_posts : (req,res) => {
         console.log('POST —')
+        BlogPost.create({ title: req.body.title });
         res.send('+ ✓')
     },
 };
