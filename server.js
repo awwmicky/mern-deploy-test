@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+require('dotenv').config()
 
 /* Middleware */
 if (process.env.NODE_ENV === 'production') {
