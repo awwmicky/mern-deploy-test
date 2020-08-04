@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom'
 import React from 'react'
 import './assets/CSS/App.css'
-import HomePage from './views/HomePage/HomePage'
+import HomePage from './views/HomePage';
 
 export default function App () {
   return (
@@ -18,6 +18,14 @@ export default function App () {
             exact 
             path="/" 
             component={HomePage} 
+          />
+          <Route
+            path="*"
+            render={ () => (
+              <h2 className="App">
+                ERROR — 404
+              </h2>
+            )}
           />
         </Switch>
       </Router>

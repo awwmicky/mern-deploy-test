@@ -7,7 +7,7 @@ export default function Form () {
 
   return (
     <form className="App">
-      <h1>Comp Form</h1>
+      <h2>Comp Form</h2>
     </form>
   );
 
