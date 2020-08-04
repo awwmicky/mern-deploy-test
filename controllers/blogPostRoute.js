@@ -5,7 +5,7 @@ module.exports = {
         console.log('GET —')
         res.send('> ✓')
     },
-    create_post : (req,res) => {
+    create_posts : (req,res) => {
         console.log('POST —')
         res.send('+ ✓')
     },
