@@ -1,15 +1,24 @@
+import {
+  BrowserRouter as Router,
+  Route, Switch
+} from 'react-router-dom'
 import React from 'react'
 import './assets/CSS/App.css'
-import Form from './components/Form/Form'
-import Posts from './components/Posts/Posts'
-
+import HomePage from './view/HomePage/HomePage'
 
 export default function App () {
   return (
     <>
-      <h1>MERN Blog App</h1>
-      <Form />
-      <Posts />
+      <Router>
+        <h1>MERN Blog App</h1>
+        <Switch>
+          <Route 
+            exact 
+            path="/" 
+            component={HomePage} 
+          />
+        </Switch>
+      </Router>
     </>
   );
 }
