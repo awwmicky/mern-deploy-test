@@ -11,7 +11,8 @@
     "installs:server": "npm install",
     "installs:both": "npm install && cd client && npm install",
     "build": "npm install && cd client && npm install && npm run build",
-    "dev": "concurrently \"nodemon server.js\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev:test": "concurrently -n 'server,client' -c 'yellow,white' npm:server npm:client"
   },
   "keywords": [],
   "author": "",
