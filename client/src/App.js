@@ -19,6 +19,7 @@ export default function App () {
             path="/" 
             component={HomePage} 
           />
+          
           <Route
             path="*"
             render={ () => (

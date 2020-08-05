@@ -5,7 +5,7 @@ require("dotenv").config();
 /* Middleware */
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("../client/build/"));
-  app.get("/", (req, res) => {
+  app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
@@ -40,3 +40,5 @@ mongoose.connect(MONGO_URI, options, (err) => {
     console.log(`Test Server - http://localhost:${PORT}`);
   });
 });
+
+// "proxy": "http://localhost:5000"
