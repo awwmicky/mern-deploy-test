@@ -49,7 +49,7 @@ export default function Test () {
   };
 
   return (
-    <>
+    <div className="Test">
       <form className="App" onSubmit={ handleSubmit }>
         <h3>Form Test</h3>
         <br/>
@@ -78,6 +78,14 @@ export default function Test () {
           ))
         }
       </section>
-    </>
+      <div className="App">
+        <p>-----------------</p>
+        <ul>
+          <li>MERN stack deployed to Heroku</li>
+          <li>connected to Atlas Cluster</li>
+          <li>working production site API calls</li>
+        </ul>
+      </div>
+    </div>
   );
 }

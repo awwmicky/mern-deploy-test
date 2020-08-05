@@ -1,0 +1,7 @@
+/* .Test { border: 2px solid black; } */
+section.App > p { 
+    /* border: 2px solid black;  */
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: initial;
+}
