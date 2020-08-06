@@ -40,7 +40,10 @@ export default function Test () {
     if (!text.trim()) return;
     const obj = { title: text };
     const result = sendData(obj);
-    if (result) setState(_ => ({..._ , text: ""}))
+    if (result) {
+      getData()
+      setState(_ => ({..._ , text: ""}))
+    }
   };
 
   const handleValue = (e) => {

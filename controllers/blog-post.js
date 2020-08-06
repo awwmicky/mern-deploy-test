@@ -13,7 +13,8 @@ module.exports = {
     },
     create_posts : (req,res) => {
         console.log('POST —')
-        BlogPost.create({ title: req.body.title });
-        res.send('+ ✓')
+        BlogPost.create({ title: req.body.title })
+        .then(data => res.send(data))
+        .catch(err => res.send(err))
     },
 };
