@@ -1,6 +1,5 @@
 import React from 'react'
 import Form from '../components/Form/Form'
-import Posts from '../components/Posts/Posts'
 import Test from '../components/Test/Test'
 
 export default function HomePage () {
@@ -10,7 +9,6 @@ export default function HomePage () {
                 Home Page
             </h2>
             <Form />
-            <Posts />
             <Test />
         </div>
     );

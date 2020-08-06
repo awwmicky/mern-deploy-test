@@ -34,7 +34,7 @@ export default function Test () {
 
   useEffect(() => { getData() }, [ ])
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     
     if (!text.trim()) return;
